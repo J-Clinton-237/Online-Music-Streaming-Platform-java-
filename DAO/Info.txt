@@ -1,0 +1,13 @@
+This is the folder that will hold all classes linking the system to the database.
+
+Example of Classes:
+
+        connectDatabase
+        addNewUser(name, email, dateRegistered)
+        addNewArtist(name, email, dateRegistered, Genre)
+        addPlaylist()
+        deletePlaylist(playlist ID)
+        addSong(song file URL)
+        removeSong(song ID)
+        getSong(song ID)
+    
