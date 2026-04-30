@@ -20,7 +20,7 @@ MVC Architecture (if applicable)
 
 Optional Tools:
 JavaFX / Swing (for GUI)
-MySQL / SQLite (for database)
+POSTGRESQL / SQLite (for database)
 
 
 
