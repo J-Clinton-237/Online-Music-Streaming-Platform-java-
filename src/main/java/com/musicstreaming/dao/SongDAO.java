@@ -99,8 +99,9 @@ public class SongDAO {
      * Search songs by title
      */
     public static List<Map<String, Object>> searchSongs(String query) throws SQLException {
-        String sql = "SELECT s.*, a.name as artist_name FROM songs s " +
+        String sql = "SELECT s.*, a.name as artist_name,al.title as album_title, al.cover_image_url FROM songs s " +
                      "LEFT JOIN artists a ON s.artist_id = a.id " +
+                     "LEFT JOIN albums al ON s.album_id = al.id " +
                      "WHERE LOWER(s.title) LIKE LOWER(?) OR LOWER(a.name) LIKE LOWER(?) " +
                      "ORDER BY s.title";
         List<Map<String, Object>> songs = new ArrayList<>();
@@ -121,6 +122,9 @@ public class SongDAO {
                 song.put("artist_name", rs.getString("artist_name"));
                 song.put("duration", rs.getInt("duration"));
                 song.put("genre", rs.getString("genre"));
+                song.put("file_path", rs.getString("file_path"));
+                song.put("album_id", rs.getInt("album_id"));
+                song.put("cover_image_url", rs.getString("cover_image_url"));
                 songs.add(song);
             }
         }

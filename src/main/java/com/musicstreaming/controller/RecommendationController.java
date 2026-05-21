@@ -9,7 +9,7 @@ import com.musicstreaming.service.*;
 @RequestMapping("/api/recommendations")
 public class RecommendationController {
     
-    // ===== FAVORITES =====
+    // ===== FAVORITES ===== \\
     
     @PostMapping("/favorites")
     public Map<String, Object> addFavorite(@RequestBody Map<String, Integer> request) {

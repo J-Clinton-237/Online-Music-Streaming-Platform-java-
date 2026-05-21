@@ -31,6 +31,7 @@ public class ArtistDAO {
     /**
      * Get artist by ID
      */
+    // COLLECTS ARTIST INFO FROM DATABASE WHEN ALREADY LOGGED IN TO CUSTOMIZE DASHB
     public static Map<String, Object> getArtistById(int artistId) throws SQLException {
         String sql = "SELECT * FROM artists WHERE id = ?";
         Map<String, Object> artist = new HashMap<>();
@@ -53,6 +54,7 @@ public class ArtistDAO {
         return artist;
     }
 
+    // COLLECTS USER INFO FROM DATABASE WHEN ALREADY LOGGED IN TO CUSTOMIZE DASHB
     public static Map<String, Object> getArtistByUserId(int userId) throws SQLException {
         String sql = "SELECT * FROM artists WHERE user_id = ?";
         Map<String, Object> artist = new HashMap<>();

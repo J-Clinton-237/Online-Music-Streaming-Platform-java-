@@ -42,10 +42,10 @@ body.light-mode {
     --secondary-color: #ffffff;
     --text-primary: #191414;
     --text-secondary: #6a6a6a;
-    --background-dark: #ffffff;
-    --background-secondary: #f7f7f7;
-    --background-tertiary: #efefef;
-    --border-color: #d3d3d3;
+    --background-dark: #ece2e2;
+    --background-secondary: #ece1e1;
+    --background-tertiary: #d2cccc;
+    --border-color: #aaa7a7;
 }
 
 /* ==================== GLOBAL STYLES ==================== */
@@ -1052,4 +1052,10 @@ input[type="range"]::-moz-range-thumb {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.25rem; }
     h3 { font-size: 1rem; }
+    .app.hidden{
+        margin-top: 20%;
+    }
+    .nav-menu a span{
+        display: none ;
+    }
 }

@@ -157,7 +157,7 @@ Online-Music-Streaming-Platform-java/
    ```
 
 6. **Access the Application**
-   Open your browser and navigate to: `http://localhost:8080`
+   Open your browser and navigate to: `http://localhost:9090`
 
 ## Features
 
